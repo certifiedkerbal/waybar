@@ -1,0 +1,88 @@
+/* General styling for all elements */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "FontAwesome 6 Free", sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+/* Main Waybar window */
+window#waybar {
+    background: rgba(0, 0, 0, 1); /* Black opaque background */
+    color: #cdd6f4; /* Light text for contrast */
+}
+#custom-menu {
+    padding: 0 12px;
+    background: #b4befe; /* Light purple for Gentoo vibe */
+    color: #1e1e2e;
+    border-radius: 8px;
+    margin: 0 5px;
+}
+#custom-menu:hover {
+    background: #94e2d5; /* Cyan on hover */
+    box-shadow: 0 0 8px #94e2d5;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+/* Workspaces module */
+#workspaces button {
+    padding: 0 8px;
+    background: transparent;
+    color: #cdd6f4;
+    border-bottom: 2px solid transparent;
+}
+#workspaces button.active {
+    background: #f38ba8; /* Pink for active workspace */
+    color: #1e1e2e;
+    border-bottom: 2px solid #cdd6f4;
+}
+#workspaces button.urgent {
+    background: #f9e2af; /* Yellow for urgent */
+    color: #1e1e2e;
+}
+#workspaces button:hover {
+    background: rgba(100, 114, 125, 0.5);
+    border-bottom: 2px solid #cdd6f4;
+}
+/* Module styling */
+#cpu, #memory, #battery, #pulseaudio {
+    padding: 0 10px;
+    margin: 0 5px;
+    border-radius: 8px; /* Rounded corners for system stats */
+}
+#cpu {
+    background: #89b4fa; /* Blue */
+    color: #1e1e2e;
+}
+#memory {
+    background: #a6e3a1; /* Green */
+    color: #1e1e2e;
+}
+#battery {
+    background: #f9e2af; /* Yellow */
+    color: #1e1e2e;
+}
+#battery.charging {
+    background: #94e2d5; /* Cyan */
+}
+#pulseaudio {
+    background: #cba6f7; /* Purple */
+    color: #1e1e2e;
+}
+#clock {
+    padding: 0 10px;
+    margin: 0 5px;
+    background: #f38ba8; /* Pink */
+    color: #1e1e2e;
+    border-radius: 8px;
+}
+#tray {
+    background: transparent;
+    padding: 0 10px;
+    margin: 0 5px;
+}
+/* Hover effects */
+#workspaces button:hover {
+    background: rgba(100, 114, 125, 0.5);
+    border-bottom: 2px solid #cdd6f4;
+}
